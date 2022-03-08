@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol {
+	list-style: none;
+}
+button {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+button {
+	border: 0 none;
+	background-color: transparent;
+	cursor: pointer;
+}
+em,
+address {
+	font-style: normal;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+iframe,
+fieldset,
+img {
+	border: 0 none;
+}
+textarea {
+	resize: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+img {
+	vertical-align: top;
+}
+hr {
+	display: none;
+}
+
+.header {
+	position: relative;
+	padding: 30px 0;
+	text-align: center;
+}
+.header .title {
+	display: inline;
+	font-size: 38px;
+	color: #fff;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
+	border-bottom: 1px solid #000;
+}
+.button__add {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 30px;
+	height: 30px;
+	font-size: 21px;
+	border: 1px solid #000;
+}
+.container {
+	padding: 30px;
+}
+.box__habit {
+	display: inline-block;
+	width: 210px;
+	border: 1px solid #000;
+}
+.box__habit + .box__habit {
+	margin-left: 20px;
+}
+.box__habit-title {
+	position: relative;
+	height: 38px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.box__habit-title .text__title {
+	font-size: 14px;
+}
+.box__habit-title .button__close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+}
+.box__habit-content {
+	position: relative;
+}
+.box__habit-content .list-item {
+	display: inline-flex;
+	height: 30px;
+	vertical-align: top;
+}
+.box__habit-content .list-item:nth-child(7n + 1) .form__label {
+	border-left: 0;
+}
+.box__habit-content .form__label {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	box-sizing: border-box;
+	font-size: 12px;
+	cursor: pointer;
+}
+.box__habit-content .form__checkbox {
+	-webkit-appearance: none;
+	appearance: none;
+}
+.box__habit-content .form__checkbox:focus + .form__label {
+	outline: auto 5px -webkit-focus-ring-color;
+}
+.box__habit-content .form__checkbox:checked + .form__label {
+	background: #ffff00;
+	color: #999;
+}
+.box__habit-content .form__checkbox:checked + .form__label::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 60px;
+	transform: rotate(45deg);
+	background-color: #999;
+}
+.box__habit-content .text__total {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 30px;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+	box-sizing: border-box;
+	font-size: 12px;
+}
